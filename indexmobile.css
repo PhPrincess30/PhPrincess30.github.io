@@ -15,6 +15,13 @@ body {
 	box-shadow: none;
 }
 
+header {
+	background-image: url(images/header-min.png);
+	background-color: #402060;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 50%;
+}
 
 main {
 	margin: 0;
