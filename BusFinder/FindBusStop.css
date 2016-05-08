@@ -1,0 +1,49 @@
+/*
+3/19/2016 CSS for Bus stop finder. 
+Author Bonnie Frieden copyright 2016 
+*/
+
+body { 
+	font-family: Arial, Verdana, Tahoma; 
+	font-size: 1em;
+} 
+
+#wrapper {
+	width: 80%; min-width: 700px; max-width: 1024px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffffff;
+	color: #000066;
+}
+
+
+
+td { 
+	font-size: 0.75em;
+ }
+.dd { 
+	font-size: 0.75em;
+} 
+
+.title {
+	font-size: 1.5em; 
+	font-style: italic; 
+	font-weight: bold; 
+	color: #0066ff; 
+}
+
+.subtitle {
+	font-size: 1em;
+	font-weight: Bold;
+	color: #0066ff;
+	
+} 
+
+
+#Button {
+	padding: 0.5em;
+	margin-top: 1em;
+	color: #0066ff; 
+	font-weight: bold;
+	font-size: 1em;
+}

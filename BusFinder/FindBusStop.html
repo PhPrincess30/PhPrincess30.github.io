@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<!-- Behold my vision for a web app that will allow parents and staff to determine a students qualification for bussing service. As of now parents must call school site to get number for transportation department, then call transportation to inquire of nearest bus stop and weather student lives within 2 miles of school.-->
+ <html> 
+ <head> 
+ <title>VUSD Transoportation Elegability </title> 
+ <link rel="stylesheet" href="FindBusStop.css">
+ </head>
+ <body> <!--table to organize form information. Not accessiblity compliant will need to change-->
+	<div id="wrapper">			
+		<h1 class="title">
+			<div>
+				<img alt="VUSD" src="https://www.google.com/a/vistausd.org/images/logo.gif?alpha=1&amp;service=google_black"/> Vista Unified School District
+			<div> 
+		</h1>
+				<!--title held in div container. Form follows div containter. -->
+			<form action="" method="post" id="Form1"> <!-- Use this from to drop a pin on a map showing school boundaries.-->
+				<!--use of table to organize form. not valid in html5-->
+					<fieldset>
+					<!--first tr explains purpose of form and how to use it.-->
+					<p> Would you like to know if your studen is elegible for transportation ? This App will provide the answers. Simply fill in the required information and click the check elegability button. </br> Note: This app only works for Big bus program. For special ed busing, please contact transportation department. If your school is not listed, transportation is not offered at this site. </p>
+					 <!--Drop down menu listing schools. Improvement Idea: Trigger a form action. School selected will reveal a map with a shaded 2 mile radius around the location of the school -->
+						<legend class="subtitle">School Bus Zone </legend> 
+							<label class="subtitle"> Select School of attendance: 
+								<select id="Select1" name="Select1" class=dd> 
+									<option value="xx">Select School</option> 
+									<option value='bh'>Breeze Hill Elementary</option>
+									<option value='han'>Hannalei Elementary</option>
+									<option value ='mar'>Maryland Elementary</option>
+									<option value ='mm'>Mission Meadows Elementary</option>
+									<option value ='mhs'>Mission Vista High School</option>
+									<option value='mv'>Monte Vista Elementary</option>
+								</select> 
+							</label>
+						
+					
+						 <!--next area requires student address information. Improvement Idea: Trigger an action. Drop a pin on the map location selected from above-->
+						 <br><br>
+							<legend class="subtitle"> Enter students address: </legend><br>
+								<label> Street:<input type="text" name="street" id="street" size="60">
+								</label><br><br>
+								<label> City: <input type="text" name="city" id="city">
+								</label>
+								<label>State: <input type="text" name="state" id="state" maxlength="2" size="5"></label>
+								<label>Zip: <input type="text" name="zip" id="zip" maxlength="5"></label>
+						</fieldset>
+					 
+						
+					 <!--Button to submit information to database or to drop pin-->
+					<div>
+						<input type="submit" value="Check Elegability" name="buttonFind" id="Button"> 
+					</div>
+					
+			</form> 
+	</div>
+</body> 
+</html>
